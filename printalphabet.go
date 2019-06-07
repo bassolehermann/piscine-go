@@ -5,7 +5,7 @@ import("fmt")
 func main (){
 
 
-	fmt.Print("abcdefghijklmnopqrstuvwxyz")	
+	fmt.Printf("abcdefghijklmnopqrstuvwxyz")	
 
 	
 }
