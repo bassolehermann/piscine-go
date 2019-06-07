@@ -14,6 +14,6 @@ func reverse(s string) string {
 
 func main (){
 
-fmt.Printf(reverse("\nabcdefghijkmnlopqrstuvwxyz"))
+fmt.Printf(reverse("abcdefghijkmnlopqrstuvwxyz"))
 	
 } 
