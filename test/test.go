@@ -1,6 +1,6 @@
 package main 
 
-import piscine "fmt"
+import piscine "main"
 
 func IsNegative(nb int) {
 
