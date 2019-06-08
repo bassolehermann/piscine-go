@@ -1,13 +1,13 @@
 package main 
 
-import piscine "main"
+import piscine "fmt"
 
 func IsNegative(nb int) {
 
 	if nb<0 {
-		fmt.Println("T")
+		piscine.Println("T")
 	} else {
-		fmt.Println("F")
+		piscine.Println("F")
 	}
 }
 
