@@ -1,4 +1,4 @@
-package main
+package main 
 
 import "fmt"
 
@@ -10,7 +10,6 @@ func IsNegative(nb int) {
 		fmt.Println("F")
 	}
 }
-
 
 func main() {
 
