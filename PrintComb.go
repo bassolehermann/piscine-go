@@ -12,9 +12,9 @@ func PrintComb() {
 		for n2 <= '9' {
 			for n3 <= '9' {
 				if n1 <= n2 && n2 <= n3 {
-					fmt.Println(0, &n1, 1)
-					fmt.Println(0, &n2, 1)
-					fmt.Println(0, &n3, 1)
+					fmt.Println(0, n1, 1)
+					fmt.Println(0, n2, 1)
+					fmt.Println(0, n3, 1)
 					fmt.Println(0, "\n", 1)
 				}
 				n3 = n3 + 1
