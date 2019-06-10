@@ -1,8 +1,12 @@
+package piscine
+
+import "fmt"
+
 func IsNegative(nb int) {
 	if nb < 0 {
-		piscine.Println("T")
+		fmt.Println("T")
 	} else {
-		piscine.Println("F")
+		fmt.Println("F")
 	}
 
 }
