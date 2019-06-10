@@ -4,26 +4,24 @@ import "fmt"
 
 func PrintComb() {
 
-	var n1 = '0'
-	var n2 = '0'
-	var n3 = '0'
+	var a int
+	var b int
+	var c int
 
-	for n1 <= '9' {
-		for n2 <= '9' {
-			for n3 <= '9' {
-				if n1 <= n2 && n2 <= n3 {
-					fmt.Println(0, n1, 1)
-					fmt.Println(0, n2, 1)
-					fmt.Println(0, n3, 1)
-					fmt.Println(0, "\n", 1)
+	a = 0
+	for a < b && b < c {
+		for a <= 9 {
+			b := a + 1
+			for b <= 9 {
+				c := b + 1
+				for c <= 9 {
+					fmt.Println("%d%d%d\n", a, b, c)
+					c++
 				}
-				n3 = n3 + 1
+				b++
 			}
-			n3 = '0'
-			n2 = n2 + 1
+			a++
 		}
-		n2 = '0'
-		n1 = n1 + 1
 	}
 
 }
