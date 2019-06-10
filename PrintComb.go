@@ -11,11 +11,11 @@ func PrintComb() {
 	a = 0
 	for a < b && b < c {
 		for a <= 9 {
-			b := a + 1
+			b = a + 1
 			for b <= 9 {
-				c := b + 1
+				c = b + 1
 				for c <= 9 {
-					fmt.Println("%d%d%d\n", a, b, c)
+					fmt.Println("%v %v %v \n", a, b, c)
 					c++
 				}
 				b++
