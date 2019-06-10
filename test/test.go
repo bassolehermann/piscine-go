@@ -1,7 +1,8 @@
 func IsNegative(nb int) {
-
-	Println("T")
-
-	Println("F")
+	if nb < 0 {
+		Println("T")
+	} else {
+		Println("F")
+	}
 
 }
