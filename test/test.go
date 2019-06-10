@@ -1,9 +1,7 @@
-import "fmt"
-
 func IsNegative(nb int) {
 
-	fmt.Println("T")
+	Println("T")
 
-	fmt.Println("F")
+	Println("F")
 
 }
