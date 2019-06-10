@@ -1,8 +1,8 @@
 func IsNegative(nb int) {
 	if nb < 0 {
-		Println("T")
+		piscine.Println("T")
 	} else {
-		Println("F")
+		piscine.Println("F")
 	}
 
 }
