@@ -1,12 +1,10 @@
-import "fmt"
-
 func IsNegative(nb int) {
 
 	if nb < 0 {
-		fmt.Println("T")
+		Println("T")
 
 	} else {
-		fmt.Println("F")
+		Println("F")
 	}
 
 }
