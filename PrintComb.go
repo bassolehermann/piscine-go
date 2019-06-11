@@ -9,19 +9,16 @@ func PrintComb() {
 	var c int
 
 	a = 0
-	for a < b && b < c {
-		for a <= 9 {
-			b = a + 1
-			for b <= 9 {
-				c = b + 1
-				for c <= 9 {
-					fmt.Println("%v %v %v \n", a, b, c)
-					c++
-				}
-				b++
+	for a = 0; a < 10; a++ {
+		for b = a + 1; b < 10; b++ {
+			for c = b + 1; c < 10; c++ {
+
+				fmt.Print(a, b, c, ",")
+
 			}
-			a++
+
 		}
+
 	}
 
 }
