@@ -13,7 +13,11 @@ func PrintComb() {
 		for b = a + 1; b < 10; b++ {
 			for c = b + 1; c < 10; c++ {
 
-				fmt.Print(a, b, c, ",", " ")
+				fmt.Print(a)
+				fmt.Print(b)
+				fmt.Print(c)
+				fmt.Print(",")
+				fmt.Print(" ")
 
 			}
 
