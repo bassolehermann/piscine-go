@@ -6,7 +6,7 @@ func PrintStr(str string) {
 
 	for _, word := range str {
 
-		fmt.Print(string(word))
+		fmt.Printf(string(word))
 	}
-	fmt.Print(string("%"))
+	fmt.Printf(string("%"))
 }
