@@ -16,6 +16,16 @@ func PrintComb2() {
 					fmt.Print(d)
 					fmt.Print(",")
 					fmt.Print(" ")
+					if a == 9 && b == 8 && c == 9 && d == 9 {
+
+						fmt.Print(a)
+						fmt.Print(b)
+						fmt.Print(" ")
+						fmt.Print(c)
+						fmt.Print(d)
+						fmt.Print("\n")
+
+					}
 
 				}
 			}
