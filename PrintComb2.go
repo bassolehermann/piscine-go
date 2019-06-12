@@ -9,15 +9,15 @@ func PrintComb2() {
 		for b = a + 1; b <= 99; b++ {
 			if a == 98 && b == 99 {
 
-				fmt.Print(a)
+				fmt.Printf("%02d", a)
 				fmt.Print(" ")
-				fmt.Print(b)
+				fmt.Printf("%02d", b)
 				fmt.Print("\n")
 
 			} else {
-				fmt.Print(a)
+				fmt.Printf("%02d", a)
 				fmt.Print(" ")
-				fmt.Print(b)
+				fmt.Printf("%02d", b)
 				fmt.Print(",")
 				fmt.Print(" ")
 			}
