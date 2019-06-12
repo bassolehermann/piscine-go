@@ -3,7 +3,7 @@ package piscine
 import "fmt"
 
 func PrintComb2() {
-	var a, b, c, d int
+	var a, b int
 
 	for a = 0; a < 10; a++ {
 		for b = a + 1; b < 10; b++ {
