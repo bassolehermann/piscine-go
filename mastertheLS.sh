@@ -1,3 +1,3 @@
 #! /bin/bash
 
-ls -Fm | sed -e /s / //g/
+ls -tF | tr '\r\n' ',' | sed 's/\(.*\),/\1/' | sed 's/*//g'
