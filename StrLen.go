@@ -2,8 +2,10 @@ package piscine
 
 func StrLen(str string) int {
 
-	length := len(str)
-
-	return length
+var nbr int
+	for i:=1; i<=len(str); i++ {
+		nbr=nbr+1
+	}
+return nbr
 
 }
