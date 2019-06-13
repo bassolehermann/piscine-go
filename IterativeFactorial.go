@@ -10,8 +10,7 @@ var factVal = 1
 
         	if nb < 0  {
         		return 0
-        	}
-        	else{
+        	}else{
 				return factVal 
         	} 
 }
