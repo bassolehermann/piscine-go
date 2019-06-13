@@ -1,12 +1,13 @@
 package piscine
 
 import "math"
+
 func IterativeFactorial(nb int) int { 
 
 var factVal = 1 
 			
 			
-        	if nb < 0 || math.Maxint  {
+        	if nb < 0 || math.MaxInt  {
         		return 0
         	}else{
 
