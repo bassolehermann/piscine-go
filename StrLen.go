@@ -2,8 +2,12 @@ package piscine
 
 func StrLen(str string) int {
 
-length := []byte(str)
+	var lenght int
 
-	return len(length)
+	for lenght= range str {
+
+	}
+	
+return lenght 
 
 }
