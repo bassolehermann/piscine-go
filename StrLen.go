@@ -1,9 +1,10 @@
 package piscine
 
 func StrLen(str string) int {
+	var nbr int
+	for length, word := range str {
 
-	length := len(str)
-
-	return length
-
+		nbr = length
+	}
+	return nbr
 }
