@@ -1,6 +1,6 @@
 package piscine
 
-package "math"
+import "math"
 func IterativeFactorial(nb int) int { 
 
 var factVal = 1 
