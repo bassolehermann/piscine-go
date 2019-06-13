@@ -1,6 +1,6 @@
 package piscine
 
-func IterativeFactorial(int nb) int{
+func IterativeFactorial(nb int) int{
 
 fact:=1
 	for i:=1 ; i <= nb ; i++ {
