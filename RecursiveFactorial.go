@@ -17,7 +17,7 @@ if nb > 1{
 
 	factVal=nb*RecursiveFactorial(nb-1)
 
-	if factVal > MaxInt || factVal < MinInt {
+	if factVal > MaxInt {
 
 		return 0
 		}
