@@ -2,7 +2,7 @@
 package piscine
 
 
-func RecursiveFactorial(int nb) int {
+func RecursiveFactorial(nb int) int {
 
 var factVal = 1
 const UintSize = 32 << (^uint(0) >> 32 & 1) // 32 or 64
