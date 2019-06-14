@@ -22,10 +22,12 @@ const MaxUint = MaxInt << 1 + 1
 		fact=nb * RecursiveFactorial(nb-1)
 		if fact > MaxInt{
 			return 0
-		}
+		} 
+		return fact
+
 	}
 	
-	return fact
+	
 }
 
 
