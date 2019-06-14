@@ -14,7 +14,7 @@ const MaxUint = MaxInt << 1 + 1
 	
 	}
 	if nb> 1{
-	return n * RecursiveFactorial(n-1)
+	return nb * RecursiveFactorial(nb-1)
 	
 	}
 	 return 0
