@@ -9,17 +9,15 @@ const MaxInt = ^MinInt
 const MinUint = 0
 const MaxUint = MaxInt << 1 + 1	
 	
-	
-	if nb == 0 {
-        return 1
-    }
-	if (nb * RecursiveFactorial(nb-1))> MaxInt || nb<0 {
-	
-	return 0
+	if nb==1 {
+	return 1
 	
 	}
-    
-	return nb * RecursiveFactorial(nb-1)
+	if nb> 1{
+	return n * RecursiveFactorial(n-1)
+	
+	}
+	 return 0
 	
 }
 
