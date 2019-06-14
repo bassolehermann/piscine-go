@@ -20,7 +20,7 @@ const MaxUint = MaxInt << 1 + 1
 	}
 
 	fact = nb * RecursiveFactorial(nb-1)
-	if fact > MaxInt {
+	if nb<0 || fact > MaxInt {
 	 return 0
 	}
 
