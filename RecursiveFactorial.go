@@ -3,7 +3,7 @@ package piscine
 
 
 func RecursiveFactorial(nb int ) int { 
-	var fact
+	var fact int 
 const wordSize = 32 << (^uint(0) >> 63)
 const MinInt = -(1 << (wordSize - 1))
 const MaxInt = ^MinInt
