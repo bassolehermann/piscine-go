@@ -12,16 +12,12 @@ const (
     MaxUint = 1<<UintSize - 1     // 1<<32 - 1 or 1<<64 - 1
 )
 
-if nb <0 {
-
-	return 0
-}
 
 if nb > 1{
 
 	factVal=nb*RecursiveFactorial(nb-1)
 
-	if factVal > MaxInt  {
+	if factVal > MaxInt || factVal < MinInt {
 
 		return 0
 		}
