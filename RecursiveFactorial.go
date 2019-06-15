@@ -1,7 +1,6 @@
 
 package piscine
 
-import "math"
 
 func RecursiveFactorial(nb int) int {
 
