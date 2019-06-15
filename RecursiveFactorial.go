@@ -1,18 +1,20 @@
 
 package piscine
 
+import "math"
 
 func RecursiveFactorial(nb int) int {
 
-var factVal int
-const UintSize = 32 << (^uint(0) >> 32 & 1) // 32 or 64
-const (
-    MaxInt  = 1<<(UintSize-1) - 1 // 1<<31 - 1 or 1<<63 - 1
-    MinInt  = -MaxInt - 1         // -1 << 31 or -1 << 63
-    MaxUint = 1<<UintSize - 1     // 1<<32 - 1 or 1<<64 - 1
-)
+const wordSize = 32 << (^uint(0) >> 63)
+const MinInt = -(1 << (wordSize - 1))
+const MaxInt = ^MinInt
+const MinUint = 0
+const MaxUint = MaxInt << 1 + 1	
 
-	if nb == 1{
+var factVal int
+
+
+	if nb == 1 {
 
 		return 1
 	}
@@ -20,7 +22,7 @@ const (
 	factVal=nb*RecursiveFactorial(nb-1)
 	
 
-	if nb < 0 || factVal > MaxInt{
+	if  factVal > MaxInt{
 
 		return 0
 
