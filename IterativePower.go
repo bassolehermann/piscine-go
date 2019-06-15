@@ -1,25 +1,16 @@
-package piscine
+func IterativePower(nb int, power int ) int{ 
 
-import (
+var factVal int 
 
-"math"
-)
-
-func IterativePower(int nb, int power) int {
-
-var result int 
-
-
-	if power<0 {
-
-		return 0
-	}else{
-
-
-	result= math.Pow(nb,power)	
-	}
-
+        	
+		
+        	for i:= 1; i<=nb; i++ {
+            		factVal= math.Power(i,power)  
+        		}
+		if nb < 0 && power <0 {
+        		return 0
+        	}else{
 	
-
-return result
+				return factVal 
+        	} 
 }
