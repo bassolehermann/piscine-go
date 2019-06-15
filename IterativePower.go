@@ -1,3 +1,8 @@
+package piscine
+
+import "math"
+
+
 func IterativePower(nb int, power int ) int{ 
 
 var factVal int 
