@@ -1,9 +1,11 @@
 package piscine
 
+import "unicode/utf8"
+
 func StrLen(str string) int {
 
-	length := len(str)
+	return utf8.RuneCountInString(str)
 
-	return length
+	 
 
 }
