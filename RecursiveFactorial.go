@@ -9,7 +9,7 @@ import (
 func RecursiveFactorial(nb int) int {
 
 
-var factVal =1
+var factVal int
 
 
 	if nb == 1 {
@@ -17,16 +17,17 @@ var factVal =1
 		return 1
 	}
 	
-	factVal=nb*RecursiveFactorial(nb-1)
+	
 	
 	if  factVal > math.MaxInt32 {
 
 		return 0
 
 	} else {
-		
+		factVal=nb*RecursiveFactorial(nb-1)
 		return	factVal
 	}
+	
 
 } 
 
