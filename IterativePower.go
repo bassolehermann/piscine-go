@@ -5,7 +5,7 @@ import "math"
 func IterativePower(nb int, power int) int {
 	var result int
 
-	c := math.Pow(2, 0)
+	c := math.Pow(nb, power)
 
 	if power < 0 {
 		return 0
