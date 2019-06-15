@@ -10,7 +10,7 @@ var factVal int
         	
 		
         	for i:= 1; i<=nb; i++ {
-            		factVal= math.Power(i,power)  
+            		factVal= math.Pow(i,power)  
         		}
 		if nb < 0 && power <0 {
         		return 0
