@@ -1,16 +1,16 @@
 package piscine
 
+import "math"
+
 func IterativePower(nb int, power int) int {
 	var result int
-	for i := 1; i <= power; i++ {
-		nb = nb * i
-		result = result + nb
 
-	}
+	c := math.Pow(2, 0)
+
 	if power < 0 {
 		return 0
 	} else {
-
+		result = int(c)
 		return result
 	}
 }
