@@ -3,6 +3,9 @@ package main
 import "fmt"
 import "os"
 
-arguments:=os.Args
+func main() {
+	arguments := os.Args
 
-fmt.Print(os.Args[0])
+	fmt.Print(os.Args[0])
+
+}
