@@ -6,6 +6,6 @@ import "os"
 func main() {
 	arguments := os.Args
 
-	fmt.Print(os.Args[0])
+	fmt.Println(os.Args[0])
 
 }
