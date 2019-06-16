@@ -1,7 +1,7 @@
+package main
 
 package piscine
 
-package main
 import "os"
 
 import "fmt"
