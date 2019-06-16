@@ -1,10 +1,18 @@
+
 package piscine
 
-import "fmt"
+package main
 import "os"
 
-func main() {
-	fmt.Printf(os.Args[0])
-	fmt.Println("./main")
+import "fmt"
 
+func main()  {
+	
+fmt.Printf(os.Args[0])
 }
+
+
+
+
+	
+
