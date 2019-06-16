@@ -1,14 +1,12 @@
 package piscine
 
 func Index(s string, toFind string) int {
-	var count int
-	count = 0
-	for _, word := range s {
-		count++
-		if string(word) == string(toFind[0]) {
+	var i int
 
-			return count - 1
+	for i = 0; i < len(s); i++ {
+		if string(s[i]) == string(toFind[0]) {
+			return (i)
 		}
 	}
-	return count - 1
+	return -1
 }
