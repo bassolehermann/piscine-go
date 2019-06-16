@@ -1,9 +1,10 @@
 package main
 
 import "fmt"
+import "os"
 
 func main() {
-
-	fmt.Println("./main)")
+	fmt.Printf(os.Args[0])
+	fmt.Println("./main")
 
 }
