@@ -4,6 +4,11 @@ import "math"
 
 func IsPrime(nb int) bool {
 
+	if nb == 2 || nb == 3 {
+
+		return true
+	}
+
 	if nb%2 == 0 || nb%3 == 0 {
 
 		return false
