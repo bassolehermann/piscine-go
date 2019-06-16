@@ -3,13 +3,18 @@ package piscine
 import "math"
 
 func Sqrt(nb int) int {
-	if int(math.Sqrt(float64(nb)))%2 == 0 {
-		return int(math.Sqrt(float64(nb)))
-
-	}
-	if int(math.Sqrt(float64(nb)))%2 > 0 {
+	if nb < 0 {
 
 		return 0
+
 	}
-	return int(math.Sqrt(float64(nb)))
+
+	if float64(int(math.Sqrt(float64(nb)))) == math.Sqrt(float64(nb)) {
+
+		return int(math.Sqrt(float64(nb)))
+
+	} else {
+		return 0
+
+	}
 }
