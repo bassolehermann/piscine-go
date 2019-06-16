@@ -1,0 +1,3 @@
+func SortIntegerTable(table []int) {
+
+}
