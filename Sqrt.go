@@ -11,5 +11,5 @@ func Sqrt(nb int) int {
 
 		return 0
 	}
-
+	return int(math.Sqrt(float64(nb)))
 }
