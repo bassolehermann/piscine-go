@@ -3,7 +3,7 @@ package piscine
 func Compare(s string, toFind string) int {
 var booleen bool
 var l int 
-var err nil
+
 	if len(s)!= len(toFind){
 		 l=len(s)-len(toFind)
 
@@ -29,16 +29,14 @@ var err nil
 
 				booleen=false
 			}	
-			if err != nil {
-				return -1
-			}
+	
 		}
 	}
 	if booleen{
 		return 0
 	}else {
 
-		return -1
+		return 1
 	}
 
 }
