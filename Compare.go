@@ -14,17 +14,14 @@ func Compare(s string, toFind string) int {
 				if string(s[i])==string(toFind[i]){
 
 					booleen=true
-					index=1
+					index=0
 					
 				
 				}else{
 					booleen=false
 					break 
 				}
-				if string(s[i])!=string(toFind[0]){
-		
-				return 0
-				}
+				
 				
 			}
 			i++
