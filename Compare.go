@@ -40,9 +40,9 @@ var l int
 	}
 	if booleen{
 		return 0
-	}else {
+	}
 
 		return -1
-	}
+	
 
 }
