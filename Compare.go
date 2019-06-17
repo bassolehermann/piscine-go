@@ -6,17 +6,18 @@ var l int
 	if len(s)!= len(toFind){
 		 l=len(s)-len(toFind)
 
-		 for i := 0; i < l+1; i++ {
+		 	for i := 0; i < l+1; i++ {
 
-		 	if s[i] !=toFind[i]{
-		 		return -1
-		 	}else{
-				return 1
-			}
+		 			if s[i] != toFind[i]{
+		 					return -1
+		 			}else{
+							return 1
+					}
 		 	
-		 }
+			 }
 
 	}else{
+
 		for i := 0; i < len(s); i++ {
 
 			if s[i] == toFind[i]{
@@ -26,10 +27,7 @@ var l int
 			}else{
 
 				booleen=false
-			}
-
-			return 0
-			
+			}	
 		}
 	}
 	if booleen{
