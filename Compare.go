@@ -29,7 +29,7 @@ var l int
 
 			}else{
 				if strings.Index(s, toFind) != -1 {
-        				
+        				return -1
     			}else{
 
     				return 1
