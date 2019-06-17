@@ -1,5 +1,7 @@
 package piscine
 
+import "strings"
+
 func Compare(s string, toFind string) int {
 var booleen bool
 var l int 
