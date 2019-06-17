@@ -28,6 +28,9 @@ var l int
 
 				booleen=false
 			}	
+			if err != nil {
+				return -1
+			}
 		}
 	}
 	if booleen{
