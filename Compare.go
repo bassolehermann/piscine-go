@@ -1,38 +1,42 @@
 package piscine
 
 func Compare(s string, toFind string) int {
+var booleen bool
+var l int 
+	if len(s)!= len(toFind){
+		 l=len(s)-len(toFind)
 
-	var index int
-	var booleen bool
+		 for i := 0; i < l+1; i++ {
 
-	for i := 0; i < len(toFind); i++ {
-
-		if string(s[i])== string(toFind[i]){
-
-			for j := 0; j < len(s); j++ {
-				
-				if string(s[i])==string(toFind[i]){
-
-					booleen=true
-					index=0
-					
-				
-				}else{
-					booleen=false
-					break 
-				}
-				
-				
+		 	if s[i] !=toFind[i]{
+		 		return -1
+		 	}else{
+				return 1
 			}
-			i++
-		}
-		
-		
-	}
-	if booleen {
-		return index
+		 	
+		 }
+
 	}else{
-		return -1
+		for i := 0; i < len(s); i++ {
+
+			if s[i] == toFind[i]{
+
+				booleen=true
+
+			}else{
+
+				booleen=false
+			}
+
+			return 0
+			
+		}
+	}
+	if booleen{
+		return 0
+	}else {
+
+		return 1
 	}
 
 }
