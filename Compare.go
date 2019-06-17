@@ -11,7 +11,7 @@ var l int
 		 			if s[i] != toFind[i]{
 		 					return -1
 		 			}else{
-							return 1
+							return -1
 					}
 		 	
 			 }
