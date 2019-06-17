@@ -3,6 +3,7 @@ package piscine
 func Compare(s string, toFind string) int {
 var booleen bool
 var l int 
+var err bool
 	if len(s)!= len(toFind){
 		 l=len(s)-len(toFind)
 
