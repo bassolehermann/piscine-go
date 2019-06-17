@@ -26,8 +26,12 @@ var l int
 				booleen=true
 
 			}else{
+				if strings.Index(s, toFind) != -1 {
+        				
+    			}else{
 
-				booleen=false
+    				return 1
+    			}
 			}	
 	
 		}
