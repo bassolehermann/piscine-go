@@ -26,9 +26,11 @@ var l int
 
 				booleen=true
 
-			}else{
+			}else if s[i]>toFind[i]{
 
-				return -1
+				return 1
+			}else{
+				return-1
 			}	
 	
 		}
