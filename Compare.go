@@ -27,6 +27,7 @@ var l int
 				booleen=true
 
 			}else{
+
 				return -1
 			}	
 	
@@ -37,7 +38,7 @@ var l int
 		return 0
 	}else{
 	
-		return -1
+		return 1
 	}
 
 }
