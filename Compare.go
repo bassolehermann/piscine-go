@@ -28,21 +28,17 @@ var l int
 				booleen=true
 
 			}else{
-				if strings.Index(s, toFind) != -1 {
-        				return -1
-    			}else{
-
-    				return 1
-    			}
+				return -1
 			}	
 	
 		}
 	}
+	
 	if booleen{
 		return 0
-	}
-
-		return -1
+	}else{
 	
+		return -1
+	}
 
 }
