@@ -8,7 +8,7 @@ var l int
 	if len(s)!= len(toFind){
 		 l=len(s)-len(toFind)
 
-		 	for i := 0; i < l-1; i++ {
+		 	for i := 0; i < l ; i++ {
 
 		 			if s[i] != toFind[i]{
 		 					return -1
