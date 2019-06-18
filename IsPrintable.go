@@ -30,9 +30,9 @@ func IsPrintable(str string) bool {
 
    if booleen{
 
-   	return false
+   	return true
    }else{
 
-   	return true
+   	return false
    }
 }
