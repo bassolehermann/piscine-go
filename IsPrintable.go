@@ -3,13 +3,13 @@ package piscine
 import "strings"
 
 
-const lettre ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const lettre1="abcdefghijklmnopqrstuvwxyz"
+const lettre ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"\""
+const lettre1="abcdefghijklmnopqrstuvwxyz"\""
 
 func IsPrintable(str string) bool {
 	var booleen bool
 
-	
+
    for _, char := range str {  
       if !strings.Contains(lettre, string(char)) {
 
