@@ -7,9 +7,9 @@ import "os"
 
 func main (){
 
-	arguments:=os.Args[1]
+	arguments:=os.Args[2]
 
 
-	fmt.Println("%v",arguments)
+	fmt.Printf("%v",arguments)
 
 }
