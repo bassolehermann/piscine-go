@@ -5,10 +5,9 @@ import "fmt"
 import "os"
 
 
+func main (){
+
+	return os.Args
 
 
-	arguments:=os.Args[2]
-
-
-	fmt.Printf("%v",arguments)
-
+}
