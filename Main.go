@@ -2,12 +2,14 @@ package main
 
 
 import "fmt"
+import "os"
 
 
 func main (){
 
+	arguments=os.Args[1]
 
 
-	fmt.Println("./main")
+	fmt.Println("%v"arguments)
 
 }
