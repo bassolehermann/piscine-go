@@ -9,7 +9,7 @@ import (
 
 
 func main() {
-var temp byte 
+var temp string 
 
 		for i := 1; i < len (os.Args); i++ {
 
