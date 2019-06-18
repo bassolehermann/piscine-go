@@ -11,15 +11,15 @@ func IsPrintable(str string) bool {
 	for _, char := range str {
 		if !strings.Contains(lettre, string(char)) {
 
-			booleen = false
+			booleen = true
 
 		} else if !strings.Contains(lettre1, string(char)) {
 
-			booleen = false
+			booleen = true
 
 		} else if !strings.Contains("\n", string(char)) {
 
-			booleen = false
+			booleen = true
 		} else {
 
 			booleen = true
@@ -28,9 +28,9 @@ func IsPrintable(str string) bool {
 
 	if booleen {
 
-		return false
+		return true
 	} else {
 
-		return true
+		return false
 	}
 }
