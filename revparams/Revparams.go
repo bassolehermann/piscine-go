@@ -1,18 +1,20 @@
 package main
 
 
-import "fmt"
-import "os"
+import (
+	"fmt"
+	"strings"
+	"os"
+)
 
-
-func main (){
-
-	for i:= len(os.Args) ; i<0;i--{
-
-		fmt.Printf("%v",os.Args[i])
-		fmt.Printf("\n")
-
+func reverse_words(s string) string {
+	words := strings.Fields(s)
+	for i, j := 0, len(words)-1; i < j; i, j = i+1, j-1 {
+		words[i], words[j] = words[j], words[i]
 	}
+	return strings.Join(words, " ""\n")
+}
 
-
+func main() {
+	fmt.Println(reverse_words(os.Args))
 }
