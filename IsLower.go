@@ -2,11 +2,11 @@ package piscine
 
 import "strings"
 
-const num ="abcdefghijklmnopqrstuvwxyz"
+const let ="abcdefghijklmnopqrstuvwxyz"
 
 func IsLower(str string) bool {
    for _, char := range str {  
-      if !strings.Contains(num, string(char)) {
+      if !strings.Contains(let, string(char)) {
          return false
       }
    }
