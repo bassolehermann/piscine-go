@@ -7,7 +7,7 @@ import "os"
 
 func main (){
 
-	return string(os.Args)
+	fmt.Printf("%v",os.Args)
 
 
 }
