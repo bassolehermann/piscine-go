@@ -5,11 +5,10 @@ import "fmt"
 import "os"
 
 
-func main (){
+
 
 	arguments:=os.Args[2]
 
 
 	fmt.Printf("%v",arguments)
 
-}
