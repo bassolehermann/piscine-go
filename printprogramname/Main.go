@@ -7,7 +7,7 @@ import "os"
 
 func main (){
 
-	fmt.Printf("%v",os.Args)
+	fmt.Printf("%v\n",os.Args)
 
 
 }
