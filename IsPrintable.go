@@ -7,8 +7,8 @@ const lettre ="abcdefghijklmnopqrstuvwxyz"
 func IsPrintable(str string) bool {
    for _, char := range str {  
       if !strings.Contains(lettre, string(char)) {
-         return false
+         return true
       }
    }
-   return true
+   return false
 }
