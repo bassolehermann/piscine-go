@@ -2,7 +2,7 @@ package piscine
 
 import "strings"
 
-const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\\"
+const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const lettre1 = "abcdefghijklmnopqrstuvwxyz\\"
 
 func IsPrintable(str string) bool {
