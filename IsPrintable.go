@@ -2,13 +2,31 @@ package piscine
 
 import "strings"
 
+var booleen bool
 const lettre ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const lettre1="abcdefghijklmnopqrstuvwxyz"
 
 func IsPrintable(str string) bool {
    for _, char := range str {  
       if !strings.Contains(lettre, string(char)) {
-         return false
+
+      		booleen=false
+         
+      }else if !strings.Contains(lettre1, string(char)){
+
+      		booleen=false
+
+      }
+      else{
+
+      		booleen=true
       }
    }
-   return true
+   if booleen{
+
+   	return false
+   }else{
+
+   	return true
+   }
 }
