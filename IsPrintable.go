@@ -2,37 +2,35 @@ package piscine
 
 import "strings"
 
-
-const lettre ="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const lettre1="abcdefghijklmnopqrstuvwxyz"
+const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const lettre1 = "abcdefghijklmnopqrstuvwxyz"
 
 func IsPrintable(str string) bool {
 	var booleen bool
 
+	for _, char := range str {
+		if !strings.Contains(lettre, string(char)) {
 
-   for _, char := range str {  
-      if !strings.Contains(lettre, string(char)) {
+			booleen = false
 
-      		booleen=false
-         
-      }else if !strings.Contains(lettre1, string(char)){
+		} else if !strings.Contains(lettre1, string(char)) {
 
-      		booleen=false
+			booleen = false
 
-      }else if !strings.Contains(string(rune(92)), string(char)){
+		} else if !strings.Contains(string("\n", string(char)) {
 
-      	booleen=false
-      }else{
+			booleen = false
+		} else {
 
-      		booleen=true
-      }
-   }
+			booleen = true
+		}
+	}
 
-   if booleen{
+	if booleen {
 
-   	return true
-   }else{
+		return false
+	} else {
 
-   	return false
-   }
+		return true
+	}
 }
