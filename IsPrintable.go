@@ -17,13 +17,13 @@ func IsPrintable(str string) bool {
 
 			booleen = true
 
-		} else if strings.Contains(lettre1),string(char)) && strings.Contains("\\", string(char))
+		} else if strings.Contains(lettre1, string(char)) && strings.Contains("\\", string(char)) {
 
 			booleen = false
-		}else{
+		} else {
 
-         booleen = false
-      }
+			booleen = false
+		}
 	}
 
 	if booleen {
