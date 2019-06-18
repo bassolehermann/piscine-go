@@ -19,7 +19,7 @@ func IsPrintable(str string) bool {
 
       		booleen=false
 
-      }else if !strings.Contains("\n", string(char)){
+      }else if !strings.Contains(rune(92), string(char)){
 
       	booleen=false
       }else{
