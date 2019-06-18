@@ -15,5 +15,13 @@ func main() {
 		os.Args[i], os.Args[j] = os.Args[j], os.Args[i]
 	}
 
-	fmt.Println(os.Args)
+	for i:=1;i<len(os.Args);i++{
+
+
+		fmt.Printf("%v",os.Args[i])
+		fmt.Printf("\n")
+
+	}
+
+	
 }
