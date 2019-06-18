@@ -17,12 +17,9 @@ func IsPrintable(str string) bool {
 
 			booleen = true
 
-		} else if !strings.Contains("\\", string(char)) {
-
-			booleen = false
 		} else {
 
-			booleen = true
+			booleen = false
 		}
 	}
 
