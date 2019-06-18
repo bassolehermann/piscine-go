@@ -2,7 +2,7 @@ package piscine
 
 import "strings"
 
-const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ\\"
+const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const lettre1 = "abcdefghijklmnopqrstuvwxyz"
 
 func IsPrintable(str string) bool {
@@ -13,12 +13,14 @@ func IsPrintable(str string) bool {
 
 			booleen = true
 
-		} else if strings.Contains(lettre1, string(char)) {
+		} else if !strings.Contains(lettre1, string(char)) {
 
 			booleen = true
 
-		} else {
+		} else if strings.Contains("\\n", string(char)) {
 
+			booleen = false
+		} else {
 			booleen = false
 		}
 	}
