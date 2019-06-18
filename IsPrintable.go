@@ -17,7 +17,7 @@ func IsPrintable(str string) bool {
 
 			booleen = false
 
-		} else if !strings.Contains(string("\n", string(char)) {
+		} else if !strings.Contains("\n", string(char)) {
 
 			booleen = false
 		} else {
