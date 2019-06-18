@@ -10,19 +10,16 @@ import (
 
 func main() {
 var temp byte 
-var arg byte
-arg=[]byte(os.Args)
-
 
 		for i := 1; i < len (os.Args); i++ {
 
 			for j := i+1 ; j < len(os.Args)+1; j++ {
 
-				if arg[j]>arg[i]{
+				if os.Args[j]>os.Args[i]{
 
-					temp=arg[j]
-					arg[j]=arg[i]
-					arg[i]=temp
+					temp=os.Args[j]
+					os.Args[j]=os.Args[i]
+					os.Args[i]=temp
 
 				}
 			}
