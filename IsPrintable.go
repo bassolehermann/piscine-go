@@ -1,6 +1,6 @@
 package piscine
 
-import "strings"
+
 
 
 
@@ -9,8 +9,9 @@ func IsPrintable(str string) bool {
 
 
 	byteArray := []byte(str)
+	byteStr:=[]byte(str)
 
-	if byteArray>127{
+	if byteArray>byteStr{
 
 		return false
 	}else{
