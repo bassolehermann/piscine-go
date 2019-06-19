@@ -2,27 +2,21 @@ package piscine
 
 import "strings"
 
-const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
 
 
 func IsPrintable(str string) bool {
-	var booleen bool
 
-	for _, char := range str {
-		if strings.Contains(lettre, string(char)) {
 
-			booleen = true
+	byteArray := []byte(str)
 
-		} else {
-			booleen = false
-		}
-	}
-
-	if booleen {
-
-		return true
-	} else {
+	if byteArray>127{
 
 		return false
+	}else{
+		return true
 	}
+
+
+	
 }
