@@ -18,7 +18,10 @@ var booleen bool
 
 			booleen=true
 			
-		}else if !strings.Contains(lettre, strconv.QuoteToASCII ("\\")) && !strings.Contains(strconv.QuoteToASCII (str), "\\"){
+		}else if !strings.Contains(strconv.QuoteToASCII (lettre), strconv.QuoteToASCII ("\\")) && !strings.Contains(strconv.QuoteToASCII (str), "\\"){
+		
+			booleen=true
+		}else if strings.Contains(str, "\""){
 		
 			booleen=true
 		}
