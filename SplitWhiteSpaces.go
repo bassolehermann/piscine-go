@@ -1,13 +1,10 @@
 package piscine
 
-import "regexp"
+import "strings"
 
 
 func SplitWhiteSpaces(str string) []string {
 var result []string
-
-	re:= regexp.MustCompile (`["]`)
-
-	result = re. Split(str, -1)
+	result = strings.Split(str,"\n")
 	return result
 }
