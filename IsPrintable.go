@@ -9,12 +9,12 @@ func IsPrintable(str string) bool {
 	var booleen bool
 
 	for _, char := range str {
-		if !strings.Contains(lettre, string(char)) {
+		if strings.Contains(lettre, string(char)) {
 
-			booleen = false
+			booleen = true
 
 		} else {
-			booleen = true
+			booleen = false
 		}
 	}
 
