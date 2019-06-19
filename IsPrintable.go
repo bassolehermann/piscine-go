@@ -4,7 +4,8 @@ import "strings"
 import "strconv"
 
 func IsPrintable(str string) bool {
-const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"	
+const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	
 var booleen bool 
 
 	for i := 0; i < len(str); i++ {
@@ -17,7 +18,7 @@ var booleen bool
 
 			booleen=true
 			
-		}else if !strings.Contains(lettre, strconv.QuoteToASCII ("\\")) && !strings.Contains(strconv.QuoteToASCII (str), "\\n"){
+		}else if !strings.Contains(lettre, strconv.QuoteToASCII ("\\")) && !strings.Contains(strconv.QuoteToASCII (str), "\\"){
 		
 			booleen=true
 		}
