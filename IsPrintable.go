@@ -16,7 +16,7 @@ var booleen bool
 
 			booleen=true
 
-		}else{
+		}else if strings.Contains(lettre, strconv.QuoteToASCII (str)){
 
 			booleen=false
 		}
