@@ -3,30 +3,32 @@ package piscine
 import "strings"
 import "strconv"
 
-const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const lettre1= "abcdefghijklmnopqrstuvwxyz"
+const lettre = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+
 
 func IsPrintable(str string) bool {
-	var booleen bool
+	
+var booleen bool 
 
-	for _, char := range str {
-		if !strings.Contains(lettre, strconv.QuoteToASCII (char)) {
+	for i := 0; i < len(str); i++ {
 
-			booleen = true
+		if strings.Contains(lettre, strconv.QuoteToASCII (str)){
 
-		} else if !strings.Contains(lettre1, string(char)) {
+			booleen=true
 
+		}else{
 
-		}else {
-			booleen = false
+			booleen=false
 		}
+		
 	}
 
-	if booleen {
+	if booleen{
 
 		return true
-	} else {
-
+	}else{
 		return false
 	}
+
+	
 }
