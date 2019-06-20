@@ -5,7 +5,7 @@ import "regexp"
 
 func SplitWhiteSpaces(str string) []string {
 
-re:= regexp.MustCompile ( `[" ""	""\n"]` )
+re:= regexp.MustCompile ( `[" ""	"]` )
 
 	return re. Split (str, -1)
 }
