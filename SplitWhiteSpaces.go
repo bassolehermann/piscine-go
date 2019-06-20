@@ -6,5 +6,5 @@ import "strings"
 func SplitWhiteSpaces(str string) []string {
 
 
-	return strings.SplitAfter(str,"		")
+	return strings.Split(str,"		")
 }
