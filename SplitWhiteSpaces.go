@@ -1,8 +1,6 @@
 package piscine
 
-import ("strings"
-
-		"regexp")
+import "regexp"
 
 
 func SplitWhiteSpaces(str string) []string {
