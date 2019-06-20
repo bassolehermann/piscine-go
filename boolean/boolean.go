@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 import "os"
-import "strings"
-const num ="1234567890"
+
 func printStr(str string) {
 	
 	fmt.Println(str)
