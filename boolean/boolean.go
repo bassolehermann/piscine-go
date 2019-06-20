@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 import "os"
-import "strings"
 
 func printStr(str string) {
 	
@@ -21,8 +20,8 @@ func main() {
 
 	
 
-	if isEven(len(strings.Fiels(os.Args))){
-		
+	if isEven(len(os.Args)){
+
 		printStr("I have an odd number of arguments")
 	} else {
 		printStr("I have an even number of arguments")
