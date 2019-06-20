@@ -1,28 +1,29 @@
 package main
 
 import "fmt"
+import "os"
 
 func printStr(str string) {
 	arrayStr := []rune(str)
 
 	for i := 0; i < len(arrayStr); i++ {
-		z01.PrintRune(arrayStr[i])
+		fmt.Println(arrayStr[i])
 	}
-	z01.PrintRune('\n')
+	fmt.Println('\n')
 }
 
 func isEven(nbr int) boolean {
 	if even(nbr) == 1 {
-		return yes
+		return true
 	} else {
-		return no
+		return false
 	}
 }
 
 func main() {
-	if isEven(lengthOfArg) == 1 {
-		printStr(EvenMsg)
+	if isEven(os.Args) == 1 {
+		printStr("I have an even number of arguments")
 	} else {
-		printStr(OddMsg)
+		printStr("I have an odd number of arguments")
 	}
 }
