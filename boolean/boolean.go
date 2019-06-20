@@ -21,7 +21,7 @@ func main() {
 
 	 
 
-	if isEven(len(os.Args)) && strings.Contains(os.Args,num){
+	if isEven(len(os.Args)){
 
 		printStr("I have an odd number of arguments")
 	} else {
