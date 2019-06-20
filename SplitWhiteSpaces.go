@@ -1,11 +1,11 @@
 package piscine
 
-import "regexp"
+import "strings"
 
 
 func SplitWhiteSpaces(str string) []string {
 
-re:= regexp.MustCompile ( `[" ""	"]` )
 
-	return re. Split (str, -1)
+return strings.Fields(str)
 }
+
