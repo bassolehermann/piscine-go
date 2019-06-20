@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 import "os"
-
+import "strings"
+const num ="1234567890"
 func printStr(str string) {
 	
 	fmt.Println(str)
@@ -18,9 +19,9 @@ func isEven(nbr int) bool {
 
 func main() {
 
-	
+	 
 
-	if isEven(len(os.Args)){
+	if isEven(len(os.Args)) && strings.Contains(os.Args,num){
 
 		printStr("I have an odd number of arguments")
 	} else {
