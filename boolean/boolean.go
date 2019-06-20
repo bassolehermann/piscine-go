@@ -4,12 +4,8 @@ import "fmt"
 import "os"
 
 func printStr(str string) {
-	arrayStr := []rune(str)
-
-	for i := 0; i < len(arrayStr); i++ {
-		fmt.Println(arrayStr[i])
-	}
-	fmt.Println('\n')
+	
+	fmt.Println(str)
 }
 
 func isEven(nbr int) bool {
