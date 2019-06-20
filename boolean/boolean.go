@@ -12,8 +12,8 @@ func printStr(str string) {
 	fmt.Println('\n')
 }
 
-func isEven(nbr string) bool {
-	if int(nbr) == 1 {
+func isEven(nbr int) bool {
+	if nbr == 1 {
 		return true
 	} else {
 		return false
