@@ -1,14 +1,12 @@
 package piscine
 
-import "strings"
-
 const nbr = "0123456789"
 
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
-	for _, val := range arr {
+	for i, val := range arr {
 
-		if f(val) && !strings.Contains(nbr, strings.ToLower(string(val))) {
+		if f(val) && string(val[i]) == "" {
 			boo = true
 		} else {
 			boo = false
