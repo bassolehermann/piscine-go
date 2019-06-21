@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	file, err := os.Open("quest8.txt")
+	//file, err := os.Open("quest8.txt")
 
 	if os.Args == nil {
 		fmt.Println(err)
