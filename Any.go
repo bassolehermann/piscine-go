@@ -6,7 +6,7 @@ func Any(f func(string) bool, arr []string) bool {
 	var boo bool
 	for i, val := range arr {
 
-		if f(val) && string(val[i]) == "" {
+		if f(val) || string(val[i]) == "" {
 			boo = true
 		} else {
 			boo = false
