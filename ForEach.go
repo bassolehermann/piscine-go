@@ -4,7 +4,9 @@ package piscine
 
 import "fmt"
 
-func ForEach(f func(int)int, arr []int) []int {
+
+func ForEach(f func(int), arr []int)  {
+
 var a = make([]int, len(arr), len(arr))
     for i, val := range arr{
 
@@ -13,10 +15,13 @@ var a = make([]int, len(arr), len(arr))
 	
     }
     return a
+
 }
 
-func PutNbr (nbr int) int {
 
-	return nbr
+func PutNbr (arr int) int { 
+
+	
+return arr
 
 }
