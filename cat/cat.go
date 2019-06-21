@@ -10,7 +10,7 @@ func main() {
 
 	File,err := os.Open("quest8.txt")
 
-	if os.Args == nil {
+	if os.Args == nil && err != nil  {
 
 		fmt.Println("")
 	} else if err != nil {
