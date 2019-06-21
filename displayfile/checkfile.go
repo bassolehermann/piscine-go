@@ -13,11 +13,8 @@ func main() {
 		fmt.Println(err)
 	} else if len(os.Args) == 1 {
 		
-		arg := make([]byte, 31)
-		file.Read(arg)
-		fmt.Println(string(arg))
-		file.Close()
-	} else {
+		fmt.Println("file exist")
+	} else if len(os.Args) >1 {
 		fmt.Println("Too many arguments")
 	}
 
