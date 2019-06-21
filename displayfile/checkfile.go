@@ -10,7 +10,7 @@ func main() {
 	//file, err := os.Open("quest8.txt")
 
 	if os.Args == nil {
-		fmt.Println(err)
+		fmt.Println("file name missing")
 	} else if len(os.Args) == 1 {
 		
 		fmt.Println("file exist")
