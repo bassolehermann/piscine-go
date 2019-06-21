@@ -20,7 +20,7 @@ func main() {
 		result, _ := ioutil.ReadAll(File)
 		fmt.Println(string(result))
 
-	}else if os.Args[0]=="" {
+	}else if os.Args[1]=="" {
 
 		fmt.Print("")
 
