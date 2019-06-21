@@ -5,9 +5,9 @@ func Any(f func(string) bool, arr []string) bool {
 	for _, val := range arr {
 
 		if f(val) {
-			boo = true
-		} else {
 			boo = false
+		} else {
+			boo = true
 		}
 
 	}
