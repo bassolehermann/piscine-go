@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	file, _ := os.Open("quest8.txt")
+	file, err := os.Open("quest8.txt")
 
 	if len(os.Args) == 1 {
 		fmt.Println("File name missing")
@@ -19,6 +19,8 @@ func main() {
 
 	} else if len(os.Args) >2 {
 		fmt.Println("Too many arguments")
+	} else if err != nil {
+		fmt.Println(err.Erro()) 
 	}
 
 }
