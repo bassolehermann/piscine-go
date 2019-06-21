@@ -11,6 +11,6 @@ func Map(f func(int) bool, arr []int) []bool {
 	return booleen
 }
 
-func IsPrime(nb int) {
+func Iprime(nb int) {
 
 }
