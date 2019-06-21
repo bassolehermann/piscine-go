@@ -9,9 +9,9 @@ func main() {
 
 	file, err := os.Open("quest8.txt")
 
-	if len(os.Args) >= 1 {
-		fmt.Println("Too many arguments")
-	} else if err != nil {
+	if os.Args == nil {
+		fmt.Println("File name missing")
+	} else if len(os.Args) >= 1 {
 		fmt.Println(err)
 	} else {
 		arg := make([]byte, 31)
