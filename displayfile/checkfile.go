@@ -13,9 +13,14 @@ func main() {
 		fmt.Println("File name missing")
 	} else if len(os.Args) == 2 {
 		
-		fmt.Println(err.Error())
+		tab:=make([]byte ,14)
+		file.Read(tab)
+		fmt.Println(string(tab))
 
 	} else if len(os.Args) >2 {
 		fmt.Println("Too many arguments")
+	} else if err != nil {
+		fmt.Println(err.Error()) 
 	}
+
 }
