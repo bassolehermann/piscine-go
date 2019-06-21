@@ -11,7 +11,7 @@ func main() {
 
 	if os.Args == nil {
 		fmt.Println(err)
-	} else if len(os.Args) = 1 {
+	} else if len(os.Args) == 1 {
 		fmt.Println("Too many arguments")
 	} else {
 		arg := make([]byte, 31)
