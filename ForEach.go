@@ -6,9 +6,9 @@ package piscine
 
 func ForEach(f func(int)int, arr []int) []int {
 var a = make([]int, len(arr), len(arr))
-    for index, val := range arr{
+    for i, val := range arr{
 
-        a[index] = f(val)
+        a[i] = f(val)
     }
     return a
 }
