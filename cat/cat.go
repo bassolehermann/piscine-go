@@ -14,7 +14,7 @@ func main() {
 
 		fmt.Println(os.Args[0])
 	} else if err != nil {
-		fmt.Println(err.Error(os.Args))
+		fmt.Println(err.Error(os.Args[0]))
 	} else if os.Args[1]=="quest8.txt" || os.Args[1]=="quest8T.txt" {
 
 		result, _ := ioutil.ReadAll(File)
