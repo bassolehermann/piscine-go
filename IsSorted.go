@@ -3,10 +3,27 @@ package piscine
 import "sort"
 
 func IsSorted(f func(a, b int) int, tab []int) bool {
-	var s []int	
+	
+var temp int
+var t []int 	
 
-		s=sort.Ints(tab)
-		if tab==s {
+
+		for i:=0;i<len(tab);i++{
+
+			for i:= 0 ;i<len(tab)-1;j++{
+
+				if tab[i]>tab[i+1] {
+					temp=tab[i]
+					 tab[i]=tab[i+1]
+					 tab[i+1]=temp
+				}
+			}
+			t= t[i]
+		}
+
+
+
+		if tab==t {
 			return true
 		}else {
 			return false
