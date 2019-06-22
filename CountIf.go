@@ -1,25 +1,25 @@
 package piscine
 
-const nbr = "0123456789"
+
 
 func CountIf(f func(string) bool, tab []string) int {
 	var boo bool
-	var nbr int
+	var nombre int
 	for i, val := range tab {
 
 		if f(val) {
 			boo = true
-			nbr=i
+			nombre=i
 		} else if f(val){
 			boo = false
-			nbr =i
+			nombre =i
 		}
 
 	}
 	if boo {
-		return nbr
+		return nombre
 	} else {
-		return nbr
+		return nombre
 
 	}
 }
