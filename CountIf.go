@@ -18,9 +18,6 @@ func CountIf(f func(string) bool, tab []string) int {
 	}
 	if boo {
 		return nombre
-	} else {
-		return nombre
-
 	}
 }
 func count(str string) {
