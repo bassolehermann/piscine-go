@@ -16,6 +16,17 @@ var booleen bool
 			}
 
 		}
+		for i:=len(tab);i<0 ;i--{
+
+			if tab[i]<tab[i-1] {
+				booleen=false
+			}else{
+				booleen=true
+			}
+
+		}
+
+
 
 
 if booleen{
