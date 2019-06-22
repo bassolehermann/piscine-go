@@ -1,8 +1,6 @@
 package piscine
 
-import "strings"
 
-const nbr = "0123456789"
 
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
@@ -10,11 +8,7 @@ func Any(f func(string) bool, arr []string) bool {
 
 		if f(val) {
 			boo = true
-		} else if strings.Contains(string(val[i]), "") {
-
-			boo = true
-
-		} else {
+		} else  {
 			boo = false
 		}
 
