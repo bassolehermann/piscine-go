@@ -5,11 +5,11 @@ package piscine
 func CountIf(f func(string) bool, tab []string) int {
 	var boo bool
 	var nombre int
-	for _, val := range tab {
+	for i, val := range tab {
 
 		if f(val) {
 			boo = true
-			nombre=len(val)
+			nombre=len(val)-i
 		} else {
 			boo = false
 			nombre =len(val)
