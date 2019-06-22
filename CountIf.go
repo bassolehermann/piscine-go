@@ -12,7 +12,7 @@ func CountIf(f func(string) bool, tab []string) int {
 			nombre=i+1
 		} else {
 			boo = false
-			nombre =(len(val))
+			nombre =(i-len(val))
 		}
 
 	}
