@@ -23,7 +23,7 @@ func Any(f func(string) bool, arr []string) bool {
 }
 func Nume(str string) bool{
 
- 	if strings.Contains(str, "") {
+ 	if !strings.Contains(str, "") {
 
 	return true
 
