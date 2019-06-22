@@ -6,9 +6,9 @@ func Any(f func(string) bool, arr []string) bool {
 	var boo bool
 	for _, val := range arr {
 
-		if f(val) &&  strings.Contains(4, val) {
+		if f(val) {
 			boo = true
-		} else {
+		} else if f(val){
 			boo = false
 		}
 
