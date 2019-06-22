@@ -1,14 +1,12 @@
 package piscine
 
 
-import "strings"
-
 
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
 	for _, val := range arr {
 
-		if f(val) {
+		if f(val) && f(val)<=1 {
 			boo = true
 		} else {
 			boo = false
@@ -21,15 +19,8 @@ func Any(f func(string) bool, arr []string) bool {
 		return false
 	}
 }
-func Nume(str string) bool{
+func Nume(str string) {
 
- 	if !strings.Contains(str, "") {
 
-	return true
-
-	} else{
-	return false
-	
-	}
 
 }
