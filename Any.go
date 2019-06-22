@@ -1,14 +1,10 @@
 package piscine
 
-const nbr = "0123456789"
-
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
-	for i, val := range arr {
+	for _, val := range arr {
 
 		if f(val) {
-			boo = true
-		} else if string(val[i]) == "" {
 			boo = true
 		} else {
 			boo = false
