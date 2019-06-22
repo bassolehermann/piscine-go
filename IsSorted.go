@@ -29,7 +29,7 @@ if booleen{
 }
 
 
-func f(nbr1,nbr2 int) int {
+func f(nbr1,nbr2 int)  {
 
 
 }
