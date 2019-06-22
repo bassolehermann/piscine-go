@@ -10,7 +10,7 @@ func Any(f func(string) bool, arr []string) bool {
 
 		if f(val) {
 			boo = true
-		} else if !strings.Contains(val, "") {
+		} else if strings.Contains(val, "") {
 
 			boo = true
 
