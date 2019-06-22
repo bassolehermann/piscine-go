@@ -16,8 +16,24 @@ var booleen bool
 			}else if f(tab[i],tab[i+1])<0{
 				booleen=true
 			}
-
 		}
+
+
+		for i:=len(tab)-1;i>0;i--{
+
+			if f(tab[i],tab[i+1])>0 {
+				booleen=true
+			}else if f(tab[i],tab[i+1])==0{
+				booleen=true
+			}else if f(tab[i],tab[i+1])<0{
+				booleen=true
+			}
+		}
+
+
+
+
+
 
 if booleen{
 	return true
