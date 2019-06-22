@@ -6,7 +6,7 @@ func Any(f func(string) bool, arr []string) bool {
 	var boo bool
 	for _, val := range arr {
 
-		if f(val) &&  strings.Contains(val, nbr) {
+		if f(val) &&  strings.Contains(f(val), nbr) {
 			boo = true
 		} else {
 			boo = false
