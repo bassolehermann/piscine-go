@@ -3,6 +3,8 @@ package piscine
 import "sort"
 
 func IsSorted(f func(a, b int) int, tab []int) bool {
+	var s []int	
+
 		s=sort.Ints(tab)
 		if tab==s {
 			return true
