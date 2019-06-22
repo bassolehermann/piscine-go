@@ -23,7 +23,7 @@ func CountIf(f func(string) bool, tab []string) int {
 
 	}
 }
-func Nume(str string) {
+func count(str string) {
 
 
 
