@@ -1,6 +1,8 @@
 package piscine
 
 
+import "strings"
+
 
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
@@ -8,7 +10,7 @@ func Any(f func(string) bool, arr []string) bool {
 
 		if f(val) {
 			boo = true
-		} else  {
+		} else {
 			boo = false
 		}
 
@@ -19,6 +21,15 @@ func Any(f func(string) bool, arr []string) bool {
 		return false
 	}
 }
-func verif(str string) {
+func Nume(str string) bool{
+
+ 	if strings.Contains(str, "") {
+
+	return true
+
+	} else{
+	return false
+	
+	}
 
 }
