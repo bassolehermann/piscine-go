@@ -12,9 +12,9 @@ var booleen bool
 			if f(tab[i],tab[i+1])>0 {
 				booleen=true
 			}else if f(tab[i],tab[i+1])==0{
-				booleen=false
-			}else if f(tab[i],tab[i+1])<0{
 				booleen=true
+			}else if f(tab[i],tab[i+1])<0{
+				booleen=false
 			}else{
 				booleen=false
 			}
