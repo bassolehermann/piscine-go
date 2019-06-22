@@ -1,6 +1,6 @@
 package piscine
 
-import "sort"
+
 
 func IsSorted(f func(a, b int) int, tab []int) bool {
 	
@@ -26,7 +26,7 @@ if booleen{
 }
 
 
-func f(nbr1,nbr2 int) int {
+func f(nbr1,nbr2 int){
 
 
 }
