@@ -16,7 +16,7 @@ var booleen bool
 			}else if f(tab[i],tab[i+1])<0{
 				booleen=false
 			}else {
-				booleen=true
+				booleen=false
 			}
 		}
 
