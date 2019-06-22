@@ -11,23 +11,11 @@ var booleen bool
 
 			if tab[i]>tab[i+1] {
 				booleen=false
-			}else{
+			}else if tab[i]>tab[i+1]{
 				booleen=true
 			}
 
 		}
-		for i:=len(tab);i<0 ;i--{
-
-			if tab[i]<tab[i-1] {
-				booleen=false
-			}else{
-				booleen=true
-			}
-
-		}
-
-
-
 
 if booleen{
 	return true
@@ -50,8 +38,6 @@ if nbr1>nbr2{
 
 	return -nbr1
 }
-
-
-
+	
 
 }
