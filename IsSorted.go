@@ -28,7 +28,7 @@ if booleen{
 
 func f(nbr1,nbr2 int) int {
 
-if nbr1>nbr{
+if nbr1>nbr2{
 	return nbr1
 }else if nbr1==nbr2{
 
