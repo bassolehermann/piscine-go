@@ -17,9 +17,9 @@ var booleen bool
 
 
 if booleen{
-	return true
-}else{
 	return false
+}else{
+	return true
 }
 
 
