@@ -6,11 +6,11 @@ const nbr = "0123456789"
 
 func Any(f func(string) bool, arr []string) bool {
 	var boo bool
-	for _, val := range arr {
+	for i, val := range arr {
 
 		if f(val) {
 			boo = true
-		} else if strings.Contains(val, "") {
+		} else if strings.Contains(string(val[i]), "") {
 
 			boo = true
 
