@@ -9,10 +9,12 @@ var booleen bool
 
 		for i:=0;i<len(tab)-1;i++{
 
-			if f(tab[i],tab[i+1]) {
-				booleen=false
-			}else {
+			if f(tab[i],tab[i+1])>0 {
 				booleen=true
+			}else if f(tab[i],tab[i+1])==0{
+				booleen=false
+			}else if f(tab[i],tab[i+1])<0{
+				booleen=false
 			}
 
 		}
@@ -29,15 +31,5 @@ if booleen{
 
 func f(nbr1,nbr2 int) int {
 
-if nbr1>nbr2{
-	return nbr1
-}else if nbr1==nbr2{
-
-	return 0
-}else {
-
-	return -nbr1
-}
-	
 
 }
