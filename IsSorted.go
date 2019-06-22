@@ -11,6 +11,8 @@ var booleen bool
 
 			if tab[i]>tab[i+1] {
 				booleen=false
+			}else{
+				booleen=true
 			}
 
 		}
