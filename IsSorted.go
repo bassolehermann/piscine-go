@@ -9,7 +9,7 @@ var booleen bool
 
 		for i:=0;i<len(tab)-1;i++{
 
-			if f(tab[i])>f(tab[i+1]) {
+			if f(tab[i],tab[i+1]) {
 				booleen=false
 			}else {
 				booleen=true
