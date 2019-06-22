@@ -1,5 +1,5 @@
 package piscine
-import "strings"
+
 const nbr = "0123456789"
 
 func Any(f func(string) bool, arr []string) bool {
