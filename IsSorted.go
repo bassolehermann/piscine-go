@@ -1,29 +1,11 @@
 package piscine
 
+import "sort"
+
 func IsSorted(f func(a, b int) int, tab []int) bool {
 
-	var booleen bool
+	if sort.IntsAreSorted(tab) {
 
-	for i := 0; i < len(tab)-1; i++ {
-
-		if f(tab[i], tab[i+1]) > 0 {
-			booleen = true
-		} else if f(tab[i], tab[i+1]) > 0 && tab[i+2] < tab[i+1] {
-			booleen = false
-		} else if f(tab[i], tab[i+1]) < 0 {
-			booleen = true
-		} else if f(tab[i], tab[i+1]) < 0 && tab[i+2] > tab[i+1] {
-			booleen = false
-		} else if tab[i] == 0 && tab[i+1] == 0 {
-			booleen = true
-		} else if tab[i] == 0 {
-			booleen = true
-		} else {
-			booleen = false
-		}
-	}
-
-	if booleen {
 		return true
 	} else {
 		return false
