@@ -8,12 +8,8 @@ func IsSorted(f func(a, b int) int, tab []int) bool {
 
 		if f(tab[i], tab[i+1]) > 0 {
 			booleen = true
-		} else if f(tab[i], tab[i+1]) == 0 {
-			booleen = true
 		} else if f(tab[i], tab[i+1]) < 0 {
 			booleen = true
-		} else if f(tab[i], tab[i+1]) < 0 {
-			booleen = false
 		} else {
 			booleen = false
 		}
