@@ -17,20 +17,6 @@ func IsSorted(f func(a, b int) int, tab []int) bool {
 		}
 	}
 
-	for j := len(tab); j > 0; j-- {
-
-		if f(tab[j], tab[j+1]) > 0 {
-			booleen = false
-		} else if f(tab[j], tab[j+1]) == 0 {
-			booleen = true
-		} else if f(tab[j], tab[j+1]) < 0 {
-			booleen = false
-		} else {
-			booleen = true
-		}
-
-	}
-
 	if booleen {
 		return true
 	} else {
