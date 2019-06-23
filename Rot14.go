@@ -1,6 +1,7 @@
 package piscine
 
 func Rot14(str string) string {
+	var r rune
 	r = []rune(str)
 
 	if r >= 'a' && r <= 'z' {
