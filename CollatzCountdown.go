@@ -2,11 +2,11 @@ package piscine
 
 
 func CollatzCountdown(start int) int {
-
+var result=1
 	for i := start; i > 1; i-- {
 		
-		start=start-1
+		result=result+1
 	}
 
-return start
+return result
 }
