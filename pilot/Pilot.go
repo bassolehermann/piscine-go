@@ -1,4 +1,4 @@
-
+package main
 type Pilot struct{
   Name string
   Life float64
