@@ -6,19 +6,14 @@ func CollatzCountdown(n int) int {
 
 var nb = 1
  for n != 1 {
-  n = syracuse(n)
+  	 if n%2 == 0{
+ 			n=n/2
+ 	 }else{
+ 			n=3*n+1
+ 	 }
   nb++
  }
  return nb
 
 }
 
-func syracuse(n int) int{
-
- if n%2 == 0{
- 	return n/2
- }else{
- 	return 3*n+1
- }
- 
-}
