@@ -8,7 +8,7 @@ var result int
 
 	sort.Ints(x)
 
-	result = (x[1] + x[3])/2
+	result = x[2]
 
 	return result
 
