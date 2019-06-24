@@ -1,4 +1,4 @@
-package piscine
+package student
 type donnie struct {
 	Name string
 	Life float64
