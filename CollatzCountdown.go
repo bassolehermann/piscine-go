@@ -7,10 +7,10 @@ var result=0
 	
 			if i%2==0{
 			
-				result=result+1
+				result=result/2
 			}else{
 			
-				result=result+1
+				result=result*3+1
 			}
 	}
 
