@@ -1,7 +1,9 @@
 package piscine
 
-func Rot14(str string) string {
+import"bytes"
 
+func Rot14(str string) string {
+var retour string
 	x:=[]byte(str)
 
     input := []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
@@ -10,6 +12,6 @@ func Rot14(str string) string {
     if match == -1 {
         return x
     }
-    
-    return string(output[match])
+    retour=string(output[match])
+    return retour
 }
