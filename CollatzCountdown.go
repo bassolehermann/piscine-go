@@ -11,7 +11,7 @@ var result=1
 		
 			}else{
 				start=start*3+1
-				result= result+2
+				result= result++
 			}
 
 			
