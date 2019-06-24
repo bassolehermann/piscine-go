@@ -1,5 +1,5 @@
 
-
+package piscine
 type Pilot struct{
 	
 	Name string
