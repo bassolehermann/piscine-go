@@ -8,7 +8,7 @@ type Pilot struct{
 	Age int
 }
 func main(){
-var donnie .Pilot
+var donnie.Pilot
 	donnie.Name = "Donnie"
 	donnie.Life = 100.0
 	donnie.Age = 24
