@@ -11,7 +11,7 @@ func main(){
 			fmt.Println("Alert!!!")
 			
 		break	
-		} if os.Args[i]=="galaxy01"{
+		}else if os.Args[i]=="galaxy01"{
 			fmt.Println("Alert!!!")
 			break
 		}
