@@ -3,7 +3,7 @@ package piscine
 
 func CollatzCountdown(n int) int {
 
-func syracuse(n) {
+func syracuse(n int) {
 
  if n%2 == 0{
  	return n/2
