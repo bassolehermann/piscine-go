@@ -12,7 +12,7 @@ func main(){
 			fmt.Println("Alert!!!")
 			
 		break	
-		}else if strings.Contains(os.Args[i],"galaxy 01"){
+		}else if strings.Contains(os.Args[i],"galaxy01"){
 			fmt.Printf("%v","")
 			break
 		}
