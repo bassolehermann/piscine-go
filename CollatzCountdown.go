@@ -1,19 +1,16 @@
 package piscine
 
 
-func CollatzCountdown(n int) int {
+func CollatzCountdown(start int) int {
+var result=1
+	for i := start; i > 1; i-- {
+	
+			if start%2==0{
+				start=start/2
+			}else{
+				start=start*3+1
+			}
+	}
 
-
-var nb = 1
- for n != 1 {
-  	 if n%2 == 0{
- 			n=n/2
- 	 }else{
- 			n=3*n+1
- 	 }
-  nb++
- }
- return nb
-
+return start
 }
-
