@@ -5,9 +5,9 @@ import "strings"
 
 func main(){
 	
-	for i ,val:=range (os.Args) {
+	for i := 0; i < len(os.Args); i++ {
 
-		if strings.Contains(val[i],"01") || strings.Contains(val[i],"galaxy") || strings.Contains(val[i],"galaxy 01")  {
+		if os.Args[i]=="01" || os.Args[i]=="galaxy" || os.Args[i]=="galaxy 01"  {
 			fmt.Println("Alert!!!")
 		}
 		
