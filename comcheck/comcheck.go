@@ -4,7 +4,10 @@ import "fmt"
 import "strings"
 
 func main(){
-
+	 if strings.Contains(strings.Fields(os.Args),"galaxy01"){
+			fmt.Printf("%v","")
+			break
+		}
 
 	for i := 0; i < len(os.Args); i++ {
 
@@ -12,9 +15,6 @@ func main(){
 			fmt.Println("Alert!!!")
 			
 		break	
-		}else if strings.Contains(strings.Fields(os.Args[i]),"galaxy01"){
-			fmt.Printf("%v","")
-			break
 		}
 		
 	}
