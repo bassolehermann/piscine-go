@@ -4,10 +4,6 @@ import "fmt"
 import "strings"
 
 func main(){
-	 if strings.Contains(strings.Fields(os.Args),"galaxy01"){
-			fmt.Printf("%v","")
-			break
-		}
 
 	for i := 0; i < len(os.Args); i++ {
 
