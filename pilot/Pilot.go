@@ -1,4 +1,3 @@
-package student
 
 type Pilot struct{
   Name string
