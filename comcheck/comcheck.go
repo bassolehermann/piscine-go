@@ -5,13 +5,11 @@ import "strings"
 
 func main(){
 	
-	for i := 0; i < len(os.Args); i++ {
+	for i ,val:=range (os.Args) {
 
-		if strings.Contains(os.Args[i],"01") || strings.Contains(os.Args[i],"galaxy")   {
+		if strings.Contains(val[i],"01") || strings.Contains(val[i],"galaxy") || strings.Contains(val[i],"galaxy 01")  {
 			fmt.Println("Alert!!!")
-			
-		break	
-		} 
+		}
 		
 	}
 
