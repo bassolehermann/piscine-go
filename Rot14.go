@@ -1,17 +1,22 @@
 package piscine
 
-import"bytes"
+import"unicode"
 
 func Rot14(str string) string {
-var retour string
-	x:=[]byte(str)
+var result []rune
+         
 
-    input := []byte("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
-    output := []byte("OPQRSTUVWXYZABCDEFGHIJKLMNopqrstuvwxyzabcdefghijklmn")
-    match := bytes.Index(input, x)
-    if match == -1 {
-        return x
-    }
-    retour=string(output[match])
-    return retour
+         for _, i := range str {
+                 switch {
+                 case !unicode.IsLetter(i) && !unicode.IsNumber(i):
+                         result = append(result, i)
+                 case i >= 'A' && i <= 'Z':
+                         result = append(result, 'A'+(i-'A'+14)%26)
+                 case i >= 'a' && i <= 'z':
+                         result = append(result, 'a'+(i-'a'+14)%26)
+                 case unicode.IsSpace(i):
+                         result = append(result, ' ')
+                 }
+         }
+         return string(result[:])
 }
