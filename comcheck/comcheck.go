@@ -11,7 +11,7 @@ func main(){
 		if strings.Contains(os.Args[i],"01") || strings.Contains(os.Args[i],"galaxy") || strings.Contains(os.Args[i],"galaxy 01")  {
 			fmt.Println("Alert!!!")
 		}
-		
+		break
 	}
 
 }
