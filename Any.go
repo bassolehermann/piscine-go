@@ -1,4 +1,3 @@
-package main
 package piscine
 const nbr = "0123456789"
 
