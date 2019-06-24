@@ -6,7 +6,7 @@ var result=1
 	for start>1 {
 
 			if start<0 || start==0{
-				result=result-2
+				result=-1
 			} else if start%2==0{
 				start=start/2
 				result++
