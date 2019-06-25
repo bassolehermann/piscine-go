@@ -19,7 +19,7 @@ func FindNextPrime(nb int) int {
 	
 
 	}
-	for i > {
+	for int64 > nb{
 
 		if nb%i == 0 {
 			
