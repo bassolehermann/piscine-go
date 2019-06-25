@@ -22,7 +22,7 @@ func FindNextPrime(nb int) int {
 	for i := 3; i < int(math.Sqrt(float64(nb))); i = i + 2 {
 
 		if nb%i == 0 {
-			return false
+			
 		}else {
 			return i
 			break
