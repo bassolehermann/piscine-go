@@ -16,7 +16,7 @@ func FindNextPrime(nb int) int {
 	}
 	if float64(int(math.Sqrt(float64(nb)))) == math.Sqrt(float64(nb)) {
 
-		return false
+	
 
 	}
 	for i := 3; i < int(math.Sqrt(float64(nb))); i = i + 2 {
