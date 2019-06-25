@@ -8,10 +8,12 @@ func FindNextPrime(nb int) int {
 
 		return nb
 	}
-	if nb<0{
+
+	if nb>
+	if nb<0 || nb==0 || nb==1{
 		return 2
 	}
-	if nb >9{
+	if nb ==4 || nb==6 || nb==10 {
 		return nb+1
 	}
 
