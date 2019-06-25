@@ -2,19 +2,14 @@ package piscine
 
 func Compact(ptr *[]string, length int) int {
 
+var r []string
+    for _, str := range *ptr{
+        if str != " " {
+            r = append(r, str)
+        }
+    }
+    return len(r)
 
-tab:=make([]string, length)	
-
-for i := 0; i < length; i++ {
-
-	if (*ptr)[i] != " " {
-		tab[i]=(*ptr)[i]
-
-	}
-	
-}
-
-return len(tab)
 }
 
 
