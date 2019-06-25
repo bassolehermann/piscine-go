@@ -19,16 +19,16 @@ func FindNextPrime(nb int) int {
 	
 
 	}
-	for i := 3; i < int(math.Sqrt(float64(nb))); i = i + 2 {
+	for i > {
 
 		if nb%i == 0 {
 			
-		}else {
+		}else if nb%i != 0 && float64(int(math.Sqrt(float64(nb)))) != math.Sqrt(float64(nb)) {
 			return i
-		
+			break
 		}
 
 	}
 
-	return nb
+
 }
