@@ -1,4 +1,4 @@
-
+package piscine
 import "strings"
 func Compact(ptr *[]string, length int) int {
 
