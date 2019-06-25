@@ -41,10 +41,10 @@ func main() {
 	door := &Door{}
 
 	
-	if IsDoorClose(*door) {
-		OpenDoor(*door)
-	}else if IsDoorOpen(*door) {
-		CloseDoor(*door)
+	if IsDoorClose(door) {
+		OpenDoor(door)
+	}else if IsDoorOpen(door) {
+		CloseDoor(door)
 	}
 	
 }
