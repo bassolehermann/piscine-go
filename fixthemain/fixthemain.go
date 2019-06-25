@@ -16,7 +16,7 @@ func CloseDoor(door *Door)  {
 	
 }
 func OpenDoor(door *Door)  {
-	PrintStr("Door Closing...")
+	PrintStr("Door Opening...")
 	
 }
 
