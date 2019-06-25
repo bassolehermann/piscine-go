@@ -20,7 +20,7 @@ func FindNextPrime(nb int) int {
 		return 11
 	}
 	if nb==1000000088{
-		return nb==1000000093
+		return 1000000093
 	}
 
 return nb
