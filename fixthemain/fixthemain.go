@@ -23,14 +23,14 @@ func OpenDoor(door *Door)  {
 	
 }
 
-func IsDoorOpen(door Door) bool {
+func IsDoorOpen(door *Door) bool {
 	PrintStr("is the Door opened ?")
 
 
 	return false
 }
 
-func IsDoorClose(door Door) bool {
+func IsDoorClose(door *Door) bool {
 	PrintStr("is the Door closed ?")
 	
 	return true
@@ -41,13 +41,10 @@ func main() {
 	door := &Door{}
 
 	
-	if IsDoorClose(door) {
-		OpenDoor(door)
+	if IsDoorClose(*door) {
+		OpenDoor(*door)
+	}else if IsDoorOpen(*door) {
+		CloseDoor(*door)
 	}
-	if IsDoorOpen(door) {
-		CloseDoor(door)
-	}
-	if door.state == OPEN {
-		CloseDoor(door)
-	}
+	
 }
