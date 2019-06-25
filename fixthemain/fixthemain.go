@@ -11,26 +11,22 @@ func PrintStr(str string) {
 	fmt.Println(str)
 }
 
-func CloseDoor(door *Door)  {
+func CloseDoor(door *Door) bool {
 	PrintStr("Door Closing...")
-	
+	return true
 }
-func OpenDoor(door *Door)  {
+func OpenDoor(door *Door) bool {
 	PrintStr("Door Opening...")
-	
+	return true
 }
 
-func IsDoorOpen(door *Door) bool {
+func IsDoorOpen(door *Door)  {
 	PrintStr("is the Door opened ?")
-
-
-	return true
+	
 }
 
-func IsDoorClose(door *Door) bool {
-	PrintStr("is the Door closed ?")
-	
-	return true
+func IsDoorClose(door *Door) {
+	PrintStr("is the Door closed ?")	
 }
 
 func main() {
@@ -38,10 +34,10 @@ func main() {
 	door := &Door{}
 
 	
-	if IsDoorClose(door) {
-		OpenDoor(door)
-	}else if IsDoorOpen(door) {
-		CloseDoor(door)
+	if  OpenDoor(door){
+		IsDoorClose(door)
+	}else if CloseDoor(door) {
+		IsDoorOpen(door)
 	}
 	
 }
