@@ -21,10 +21,10 @@ func FindNextPrime(nb int) int {
 	}
 	for int64 > nb{
 
-		if nb%i == 0 {
+		if nb%int64 == 0 {
 			
-		}else if nb%i != 0 && float64(int(math.Sqrt(float64(nb)))) != math.Sqrt(float64(nb)) {
-			return i
+		}else if nb%int64 != 0 && float64(int(math.Sqrt(float64(nb)))) != math.Sqrt(float64(nb)) {
+			return int64
 			break
 		}
 
