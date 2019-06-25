@@ -8,7 +8,9 @@ func FindNextPrime(nb int) int {
 
 		return nb
 	}
-
+	if nb<0{
+		return 2
+	}
 	if nb%2 == 0 || nb%3 == 0 {
 
 		
@@ -19,11 +21,11 @@ func FindNextPrime(nb int) int {
 	
 
 	}
-	for 1000 > nb{
+	for 1000000093 > nb{
 
-		if nb%1000 == 0 {
+		if nb%1000000093 == 0 {
 			
-		}else if nb%1000 != 0 && float64(int(math.Sqrt(float64(nb)))) != math.Sqrt(float64(nb)) {
+		}else if nb%1000000093 != 0 && float64(int(math.Sqrt(float64(nb)))) != math.Sqrt(float64(nb)) {
 			return nb
 			break
 		}
