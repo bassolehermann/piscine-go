@@ -30,5 +30,5 @@ func FindNextPrime(nb int) int {
 		nb++
 	}
 
-
+return nb
 }
