@@ -1,6 +1,6 @@
 package piscine
 
-import "math"
+
 
 func FindNextPrime(nb int) int {
 
