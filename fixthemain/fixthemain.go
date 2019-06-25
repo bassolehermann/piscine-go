@@ -2,8 +2,8 @@ package main
 import "fmt"
 
 
-type door struct{
-	state bool
+type Door struct{
+
 
 }
 
@@ -13,41 +13,39 @@ func PrintStr(str string) {
 		fmt.Println(s)
 	}
 }
-func OpenDoor(ptrDoor *Door){
-	PrintStr("Door Opening...")
-	door.state = OPEN
 
-}
-
-func CloseDoor(ptrDoor *Door) {
+func CloseDoor(door *Door) bool {
 	PrintStr("Door Closing...")
 	door.state = CLOSE
-
-}
-
-func IsDoorOpen(Door *Door) bool{
-	PrintStr("is the Door opened ?")
-	
 	return true
 }
-
-func IsDoorClose(Door *Door) bool {
-	PrintStr("is the Door closed ?")
+func CloseDoor(door *Door) bool {
+	PrintStr("Door Closing...")
+	door.state = OPEN
 	return false
 }
 
+func IsDoorOpen(door Door) {
+	PrintStr("is the Door opened ?")
+	return door.state = OPEN
+}
+
+func IsDoorClose(door *Door) bool {
+	PrintStr("is the Door closed ?")
+}
 
 func main() {
+
 	door := &Door{}
 
 	
 	if IsDoorClose(door) {
+		OpenDoor(door)
+	}
+	if IsDoorOpen(door) {
 		CloseDoor(door)
-	}else if IsDoorOpen(door) {
-		OpenDoor(door)
-	}else if door.state == OPEN {
-		OpenDoor(door)
-	}else if door.state == CLOSE {
+	}
+	if door.state == OPEN {
 		CloseDoor(door)
 	}
 }
