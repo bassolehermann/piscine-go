@@ -15,24 +15,25 @@ func PrintStr(str string) {
 }
 func OpenDoor(ptrDoor *Door){
 	PrintStr("Door Opening...")
-	state = OPEN
+	door.state = OPEN
 
 }
 
 func CloseDoor(ptrDoor *Door) {
 	PrintStr("Door Closing...")
-	state = CLOSE
+	door.state = CLOSE
 
 }
 
 func IsDoorOpen(Door *Door) bool{
 	PrintStr("is the Door opened ?")
-	return Door.state = OPEN
+	
+	return true
 }
 
 func IsDoorClose(Door *Door) bool {
 	PrintStr("is the Door closed ?")
-	return Door.state = CLOSE
+	return false
 }
 
 
