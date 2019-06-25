@@ -26,13 +26,13 @@ func OpenDoor(door *Door)  {
 func IsDoorOpen(door Door) bool {
 	PrintStr("is the Door opened ?")
 
-	door.state = OPEN
+
 	return false
 }
 
-func IsDoorClose(door *Door) bool {
+func IsDoorClose(door Door) bool {
 	PrintStr("is the Door closed ?")
-	door.state = CLOSE
+	
 	return true
 }
 
