@@ -24,7 +24,7 @@ func IsDoorOpen(door *Door) bool {
 	PrintStr("is the Door opened ?")
 
 
-	return false
+	return true
 }
 
 func IsDoorClose(door *Door) bool {
