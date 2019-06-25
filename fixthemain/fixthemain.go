@@ -36,8 +36,8 @@ func main() {
 	
 	if  OpenDoor(door){
 		IsDoorClose(door)
-	}else if CloseDoor(door) {
 		IsDoorOpen(door)
+		CloseDoor(door)
 	}
 	
 }
