@@ -13,7 +13,7 @@ func PrintStr(str string) {
 
 func CloseDoor(door *Door) bool {
 	PrintStr("Door Closing...")
-	return true
+	return false
 }
 func OpenDoor(door *Door) bool {
 	PrintStr("Door Opening...")
