@@ -10,7 +10,7 @@ type Door struct{
 func PrintStr(str string) {
 	arrayRune := []rune(str)
 	for _, s := range arrayRune {
-		fmt.Println(s)
+		fmt.Println(string(s))
 	}
 }
 
