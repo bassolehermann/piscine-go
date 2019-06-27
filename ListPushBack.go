@@ -1,7 +1,6 @@
 package piscine 
 
-import ("container/list"
-	"fmt")
+import ("fmt")
 
 
 type NodeL struct {
@@ -15,9 +14,18 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
-alist := list.New()
-alist.PushBack(data)
-for e := alist.Front(); e != nil; e = e.Next() {
-     fmt.Println(e.Value) // print out the elements
-  }
+
+		n:=&NodeL[Data:data]
+
+		if l.Head == nil {
+		l.Head=n
+		} else {
+		
+		for l.Head.Next != nil {
+
+			l.Head = l.Head.Next
+		}
+			l.Head.Next = n
+		}
+
 }
