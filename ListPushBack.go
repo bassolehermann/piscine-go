@@ -1,6 +1,7 @@
 package piscine 
 
-import "container/list"
+import ("container/list"
+	"fmt")
 
 
 type NodeL struct {
