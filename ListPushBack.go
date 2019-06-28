@@ -21,11 +21,14 @@ func ListPushBack(l *List, data interface{}) {
 		l.Head=n
 		} else {
 		
-		for l.Head.Next != nil {
+			for i:=l.Head; i!=nil ; i=i.Next {
 
-			l.Head = l.Head.Next
-		}
-			l.Head.Next = n
-		}
+				if i.Next==nil{
+					i.Next=n
+					break
+				}
+			}
+				
+			}
 
 }
