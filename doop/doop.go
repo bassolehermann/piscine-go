@@ -1,54 +1,52 @@
-package main 
+package main
 
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
 
-import "fmt"
+func main() {
+	var result int
 
+	if len(os.Args) == 3 {
 
-func main(){
-var result int
+		if os.Args[1] == "+" {
 
- if len(os.Args)==3 {
-
-			if os.Args[1]=="+" {
-
-			result=strconv.Atoi(os.Args[0])+ strconv.Atoi(os.Args[2])
+			result = strconv.Atoi(os.Args[0]) + strconv.Atoi(os.Args[2])
 			fmt.Print(result)
 
-			}else if os.Args[1]=="-" {
+		} else if os.Args[1] == "-" {
 
-				result=strconv.Atoi(os.Args[0])- strconv.Atoi(os.Args[2])
+			result = strconv.Atoi(os.Args[0]) - strconv.Atoi(os.Args[2])
+			fmt.Print(result)
+
+		} else if os.Args[1] == "*" {
+
+			result = strconv.Atoi(os.Args[0]) * strconv.Atoi(os.Args[2])
+			fmt.Print(result)
+
+		} else if os.Args[1] == "/" {
+			if strconv.Atoi(os.Args[2]) == 0 {
+
+				fmt.Println("No division by 0")
+
+			} else {
+				result = strconv.Atoi(os.Args[0]) / strconv.Atoi(os.Args[2])
 				fmt.Print(result)
-	
-				}else if os.Args[1]=="*" {
-
-				result=strconv.Atoi(os.Args[0])* strconv.Atoi(os.Args[2])
-				fmt.Print(result)
-			
-			}else if os.Args[1]=="/" {
-				if strconv.Atoi(os.Args[2])==0{
-
-					fmt.Println("No division by 0")
-
-				}else{
-					result=strconv.Atoi(os.Args[0])/ strconv.Atoi(os.Args[2])
-					fmt.Print(result)
-				}
-			}else if os.Args[1]=="%"{
-				if strconv.Atoi(os.Args[2])==0{
-
-					fmt.Println("No modulo by 0")
-
-				}else{
-					result=strconv.Atoi(os.Args[0])% strconv.Atoi(os.Args[2])
-					fmt.Print(result)
-				}
-			}else{
-				fmt.Print(0)
 			}
+		} else if os.Args[1] == "%" {
+			if strconv.Atoi(os.Args[2]) == 0 {
 
+				fmt.Println("No modulo by 0")
 
+			} else {
+				result = strconv.Atoi(os.Args[0]) % strconv.Atoi(os.Args[2])
+				fmt.Print(result)
+			}
+		} else {
+			fmt.Print(0)
+		}
 
- }
-	
-
-	
+	}
+}
